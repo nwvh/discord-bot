@@ -23,6 +23,7 @@ bun dev
 - [x] Avatar
 - [x] Help
 - [x] Ping
+- [x] "first" message 
 
 - [ ] Giveaway
 - [ ] Ticket System
