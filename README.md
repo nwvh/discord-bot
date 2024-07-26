@@ -7,17 +7,16 @@ An experimental Discord bot in Discord.js in TypeScript. Currently not recommend
 ## Features
 ### Commands
 
-[x] Ban 
-[x] Kick 
-[x] Warn 
-[x] Mute
+- [x] Ban 
+- [x] Kick 
+- [x] Warn 
+- [x] Mute
+- [x] Avatar
+- [x] Help
+- [x] Ping
 
-[x] Avatar
-[x] Help
-[x] Ping
-
-[ ] Giveaway
-[ ] Ticket System
-[ ] Give role
-[ ] Create role
-[ ] Coin flip
+- [ ] Giveaway
+- [ ] Ticket System
+- [ ] Give role
+- [ ] Create role
+- [ ] Coin flip
