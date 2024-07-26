@@ -4,6 +4,15 @@
 
 An experimental Discord bot in Discord.js in TypeScript. Currently not recommended for production use, but you can read the code and see how some features can be implemented.
 
+## Installation
+```bash
+git clone https://github.com/nwvhacks/discord-bot
+cd discord-bot
+bun i
+mv .env.example .env
+bun dev
+```
+
 ## Features
 ### Commands
 
