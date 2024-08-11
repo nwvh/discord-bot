@@ -30,3 +30,13 @@ bun dev
 - [ ] Give role
 - [ ] Create role
 - [ ] Coin flip
+
+### Ticket System TODO:
+- [ ] Create tickets
+- [ ] Delete tickets
+- [ ] Change priority: Low (🟢), Medium (🟡), High (🔴)
+- [ ] Change category
+- [ ] Rename ticket
+- [ ] Add / Remove members from ticket
+- [ ] Ticket limit
+- [ ] Welcome message
