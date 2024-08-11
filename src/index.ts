@@ -1,10 +1,10 @@
-import { Client } from "discord.js";
+import { ChannelType, Client } from "discord.js";
 import Config from "./config";
 import { commands } from "./commands";
 import { deployCommands } from "./deploy-commands";
 import { log } from "./functions";
 
-const client = new Client({
+export const client = new Client({
     intents: ["Guilds", "GuildMessages", "DirectMessages"],
 });
 
@@ -44,7 +44,14 @@ client.on("interactionCreate", async (interaction) => {
 
 if (Config.firstMessage) {
     client.on("channelCreate", function (channel) {
-        console.log(`channelCreate: ${channel}`);
+        log(`New channel created: ${channel.name}`, "info");
+        if (Config.firstMessageIgnoreTickets) {
+            for (const ticket of Config.tickets) {
+                if (channel.parent?.id === ticket.categoryId) {
+                    return;
+                }
+            }
+        }
         const newChannel: any = client.channels.cache.get(channel.id);
         newChannel.send("first")
     });
