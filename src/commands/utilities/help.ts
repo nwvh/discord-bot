@@ -10,11 +10,20 @@ export async function execute(interaction: CommandInteraction) {
         {
             title: "Available Commands",
             description: `Categorized list of all available commands`,
-            timestamp: true,
             fields: [
                 {
                     name: "Utilities",
                     value: "`/help` `/ping` `/avatar`",
+                    inline: true
+                },
+                {
+                    name: "Fun",
+                    value: "`/coinflip`",
+                    inline: true
+                },
+                {
+                    name: "Moderation",
+                    value: "`/ban`",
                     inline: true
                 },
             ]
